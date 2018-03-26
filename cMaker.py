@@ -24,7 +24,7 @@ class var: #variable class
     unit = ""   #unit
     note = ""   #notes
     ref = ""    #reference
-    cell = 1   #location in sheet
+    cell = ""   #location in sheet
 
     def mCont(self,List,setting):
 
@@ -51,7 +51,7 @@ class var: #variable class
     
 class seq: #sequence class
     seq = 0     #sequence order
-    typ = 0     #type: 0 - reg, 1 - iteration
+    typ = 0     #type: 0 - formula, 1 - check/if statement, 2 - HLookup, 3 - Vlookup
     name = ""   #name
     var = ""    #variable
     unit = ""   #unit
@@ -108,7 +108,7 @@ class imp: #import database variable class
     F = ""      #Control variable F
     Funit = ""  #Control variable F unit
     lexp = ""   #latex equalivent expression
-    cell = 1    #location in sheet
+    cell = ""    #location in sheet
 
     def mCont(self,List,setting):
 
