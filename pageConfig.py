@@ -21,6 +21,7 @@ cUnit = 5
 
 #[Formula]
 #Control Cell is 0,0
+colForm = 'D'   #Column of cell reference (control cell)
 cRef = 4        #Reference col from cell ref
 rRef = -2       #Reference col from cell ref
 rEqt = -3       #Eqn Title row from  cell ref
@@ -33,7 +34,7 @@ rForm = -2      #Eqn formula row from cell ref
 rOver = -1      #Eqn override row from cell ref
 cNote = -2      #Eqn Notes col from cell ref
 rNote = 1       #Eqn Notes row from cell ref
-fSize = 5
+fSize = 5       #Eqn size of block
 
 #[If-Func]
 ifSize = 3
@@ -42,11 +43,26 @@ rift = -1
 cifV = -1
 rifV = 0
 
-
 #[Lookup]
 
-#[Colour-Coding]
+#[Import Table]
+colTable = 'A'  #Column of cell import table
 
+#[Colour-Coding]
+cColour = 'ff9999'
+cColR = 'B37'
+cDesR = 'C37:E37'
+cDes = 'Control Cell: Do not modify.'
+
+oColour = 'ffc04c'
+oColR = 'B38'
+oDesR = 'C38:E38'
+oDes = 'Override Cell: Allows Designer Input'
+
+fColour = '99cc99'
+fColR = 'B39'
+fDesR = 'C39:E39'
+fDes = 'Formula Cell: Calculates based on Equation'
 
 #[Picture]
 Logo = 'BML-Logo-New.png'
@@ -60,3 +76,4 @@ tPict = 'A10'
 #[Others]
 spacing = 1
 tblock = 7
+cpyRange = 'A1:H44'
